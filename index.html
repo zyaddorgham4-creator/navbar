@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link href="photo/icon.avif" type="img/x-icon" rel="icon">
+
+</head>
+<body>
+
+<div style="margin: 0 auto; margin-top: 10px;" class="h-[70px] shadow-lg w-full lg:w-[55vw] bg-[white] rounded-[10px] flex flex-row justify-start items-center gap-[30px]">
+
+  <div style="margin-left: 20px;">
+    <i class="fa-solid fa-magnifying-glass text-[green]"></i>
+  <input  class="h-[40px] w-[30vw]" id="input_search" type="text" placeholder="search your dish...">
+
+  </div>
+
+</div>
+
+<div class="flex flex-wrap lg:flex-row gap-[20px] justify-center items-center" style="margin-top: 40px;">
+
+   <div id="show_all" class="flex flex-col hovers justify-center items-start  h-[180px] w-[170px] bg-[white] shadow-lg rounded-[10px]">
+    <img class="h-[130px]" src="photo/all.png" alt="photo" title="all">
+    <h3 style="margin-left: 30px;" class="capitalize tracking-[1px] font-semibold text-xl">all</h3>
+   </div>
+
+    <div id="show_all_breakfast" class="flex flex-col hovers justify-center items-start gap-[40px] h-[180px] w-[170px] bg-[white] shadow-lg rounded-[10px]">
+    <img  style="margin-left: 20px; margin-top: 10px;" class="h-[85px] relative top-[20px]" src="photo/breakfast.png" alt="photo" title="breakfast">
+    <h3 style="margin-left: 30px;" class="capitalize tracking-[1px] font-semibold text-xl">breakfast</h3>
+   </div>
+
+
+      <div id="show_all_soup" class="flex flex-col hovers justify-center items-start  h-[180px] w-[170px] bg-[white] shadow-lg rounded-[10px]">
+    <img style="margin-left: 10px;" class="h-[100px] relative top-[15px]" src="photo/soup.png" alt="photo" title="soup">
+    <h3 style="margin-left: 30px; margin-top: 30px;" class="capitalize tracking-[1px] font-semibold text-xl">soup</h3>
+   </div>
+
+
+      <div id="show_all_pasta" class="flex flex-col hovers justify-center items-start  h-[180px] w-[170px] bg-[white] shadow-lg rounded-[10px]">
+    <img style="margin-left: 10px;" class="h-[100px] relative top-[15px]" src="photo/pasta.png" alt="photo" title="pasta">
+    <h3 style="margin-left: 30px; margin-top: 30px;" class="capitalize tracking-[1px] font-semibold text-xl">pasta</h3>
+   </div>
+
+
+      <div id="show_main_course" class="flex flex-col hovers justify-center items-start  h-[180px] w-[170px] bg-[white] shadow-lg rounded-[10px]">
+    <img style="margin-left: 10px;" class="h-[100px] relative top-[15px]" src="photo/main_course.png" alt="photo" title="main_course">
+    <h3 style="margin-left: 30px; margin-top: 30px;" class="capitalize tracking-[1px] font-semibold text-xl">main_course</h3>
+   </div>
+
+
+      <div id="show_all_pizza" class="flex flex-col hovers justify-center items-start  h-[180px] w-[170px] bg-[white] shadow-lg rounded-[10px]">
+    <img style="margin-left: 10px;" class="h-[100px] relative top-[15px]" src="photo/pizza.png" alt="photo" title="pizza">
+    <h3 style="margin-left: 30px; margin-top: 30px;" class="capitalize tracking-[1px] font-semibold text-xl">pizza</h3>
+   </div>
+
+
+      <div id="show_all_burger" class="flex flex-col hovers justify-center items-start  h-[180px] w-[170px] bg-[white] shadow-lg rounded-[10px]">
+    <img style="margin-left: 10px;" class="h-[100px] relative top-[15px]" src="photo/burger.png" alt="photo" title="burger">
+    <h3 style="margin-left: 30px; margin-top: 30px;" class="capitalize tracking-[1px] font-semibold text-xl">burger</h3>
+   </div>
+
+
+</div>
+
+<!-- breakfast details -->
+<div  id="breakfast" class="flex flex-wrap lg:flex-row hover justify-center items-center mt-[50px] gap-[20px]">
+
+   <div data-name="panackes" data-price="200" class="h-[380px] product w-[330px] bg-[white] rounded-[5px]" >
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/panackes.avif" alt="photo" title="pancakes">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">panackes</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="Egg sandwich" data-price="50" class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/egg.avif" alt="photo" title="Egg sandwich">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">Egg sandwich</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="cheese omlette" data-price="75"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/cheese1.avif" alt="photo" title="cheese omlette">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">cheese omlette</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="hash prouns" data-price="70" class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/hash.avif" alt="photo" title="pancakes">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">hash browns</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+</div>
+
+<!-- soup details -->
+
+<div id="soup" class="flex flex-wrap lg:flex-row hover justify-center items-center mt-[50px] gap-[20px]">
+
+   <div data-name="chicken soup" data-price="60" class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/soup.avif" alt="photo" title="chicken soup">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">chicken soup</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="minestrone soup" data-price="80"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/mast2.avif" alt="photo" title="minestrone soup">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">minestrone soup</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="tomato soup" data-price="55"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/tomato.avif" alt="photo" title="tomato soup">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">tomato soup</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="mushroom soup" data-price="100"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/mash3.avif" alt="photo" title="mushroom soup">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">mushroom soup</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+</div>
+
+<!-- pasta details -->
+
+<div id="pasta" class="flex flex-wrap  lg:flex-row hover justify-center items-center mt-[50px] gap-[20px]">
+
+   <div data-name="spaghetti carbonara" data-price="120"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/spag1.avif" alt="photo" title="spaghetti carbonara">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">spaghetti carbonara</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="veg alferdo pasta" data-price="150"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/veg.avif" alt="photo" title="veg alferdo pasta">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">veg alferdo pasta</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="chicken alferdo pasta" data-price="200"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/pasta1.avif" alt="photo" title="chicken alferdo pasta">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">chicken alferdo pasta</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="fettuccine alferdo" data-price="60"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/alferdo1.jpg" alt="photo" title="fettuccine alferdo">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">fettuccine alferdo</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+</div>
+
+<!-- main course -->
+
+<div id="main_course" class="flex flex-wrap  lg:flex-row hover justify-center items-center mt-[50px] gap-[20px]">
+
+   <div data-name="paneer butter masala" data-price="200"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/basla1.avif" alt="photo" title="paneer butter masala">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">paneer butter masala</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="chicken biyani" data-price="220"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/bir2.jpg" alt="photo" title="chicken biyani">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">chicken biyani</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="chicken tikka masala" data-price="250"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/masala1.jpg" alt="photo" title="chicken tikka masala">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">chicken tikka masala</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="fish and chips" data-price="300"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/fish1.avif" alt="photo" title="fish and chips">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">fish and chips</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+</div>
+
+<!-- pizza details -->
+
+<div id="pizza" class="flex flex-wrap  lg:flex-row hover justify-center items-center mt-[50px] gap-[20px]">
+
+   <div data-name="margherita pizza" data-price="90"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/marge1.avif" alt="photo" title="margherita pizza">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">margherita pizza</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="pepperoni pizza" data-price="100"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/pep2.avif" alt="photo" title="pepperoni pizza">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">pepperoni pizza</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="hawaiian pizza" data-price="110"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/haw3.avif" alt="photo" title="hawaiian pizza">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">hawaiian pizza</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+
+</div>
+
+<!-- burger details -->
+
+<div id="burger" class="flex flex-wrap lg:flex-row hover justify-center items-center mt-[50px] gap-[20px]"> 
+
+   <div data-name="veggie burger" data-price="150"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/burger1.avif" alt="photo" title="veggie burger">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">veggie burger</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+    <div data-name="chicken burger" data-price="160"  class="h-[380px] product w-[330px] bg-[white] rounded-[5px]">
+
+    <img style="margin-top: 10px; margin-left: 10px;" class="h-[200px] rounded-[10px] w-[93%]" src="photo/c_burger1.avif" alt="photo" title="pepperoni pizza">
+    <h3 style="padding: 15px;" class="capitalize font-bold tracking-[2px] text-xl">chicken burger</h3>
+
+    <div class="flex flex-row justify-between items-center">
+      <p class="font-bold ml-[15px] capitalize tracking-[1px] text-[green] ">rs 499/-</p>
+      <p class="font-bold ml-[15px] mr-[15px] capitalize tracking-[1px] text-[green] "><i class="fa-solid text-[green] fa-cake-candles"></i> veg</p>
+    </div>
+
+    <button  class="add-to-cart mt-[25px] ml-[15px] h-[40px] text-[black] capitalize tracking-[1px] w-[90%] rounded-[10px] bg-[#57db57]">add to dish</button>
+
+   </div>
+
+
+
+</div>
+
+  <div class="cart ml-[30px] lg:absolute lg:top-[50px]  lg:right-[0px]">
+    <h2>🛒 السلة</h2>
+    <div id="cart-items"></div>
+  </div>
+
+
+  <script src="action.js"></script>
+    
+</body>
+</html>

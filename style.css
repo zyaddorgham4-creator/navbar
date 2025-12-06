@@ -1,0 +1,47 @@
+body{
+  background-color: lightblue;
+}
+#input_search{
+  margin-left: 20px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+}
+.hovers:hover{
+  background-color: rgb(142, 189, 142);
+  transition: all 0.7s;
+}
+
+#input_search::placeholder
+{
+padding: 10px;
+}
+.hover div:hover{
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+.cart {
+  width: 250px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  height: fit-content;
+}
+
+.cart h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+.cart-item:last-child {
+  border: none;
+}
+
